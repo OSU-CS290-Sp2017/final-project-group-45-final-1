@@ -61,13 +61,13 @@ function search(){
 	var input = document.getElementById('navbar-search-input').value;
 	var event = document.getElementsByClassName('event');
 	for(var i = 0; i<event.length; i++){
-		event[i].classList.remove('hidden');
+		event[i].classList.remove('hide');
 		var eventText = event[i].getElementsByClassName('event-text')[0].textContent;
 		var eventDate = event[i].getElementsByClassName('event-date')[0].textContent;
 		var x = eventText.indexOf(input);
 		var y = eventDate.indexOf(input);
 		if(x === -1 && y === -1){
-			event[i].classList.add('hidden');
+			event[i].classList.add('hide');
 		}
 	}
 }
@@ -91,3 +91,4 @@ window.onclick = function(event) {
     }
   }
 }
+
