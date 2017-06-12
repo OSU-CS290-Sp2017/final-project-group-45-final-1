@@ -21,8 +21,8 @@
 			  <nav class="navbar">
 				 <ul class="navlist">
 					<li class="navitem navlink active">Home</a></li>
-					<li ><button class="dropbtn" onclick="myFunction()">Dropdown</button>
-			      <div class="dropdown-content" id="myDropdown">
+					<li class="navitem dropitem"><button class="dropbtn" onclick="myFunction()">Month</button>
+			  <!--    <div class="dropdown-content" id="myDropdown">
 			        <a>January</a>
 			        <a>February</a>
 			        <a>March</a>
@@ -35,7 +35,7 @@
 					  <a>October</a>
 					  <a>November</a>
 					  <a>December</a>
-			      </div>
+				  </div>  -->
 				</li>
 					<li class="navitem navbar-search">
 					  <input type="text" id="navbar-search-input" placeholder="Search...">
@@ -49,7 +49,7 @@
 
 		</header>
 
-		<main="event-container">
+		<main class="event-container">
 
 			<article class ="event">
 				<div class="event-content">
@@ -62,7 +62,7 @@
 				</div>
 			</article>
 
-			<article ="event">
+			<article class ="event">
 				<div class ="event-content">
 					<p class="event-date">
 						Date: 6/15/2017
@@ -73,12 +73,15 @@
 				</div>
 			</article>
 
-			<div class = "add-event-button-container">
-				<button id="add-event-button"><i class="material-icons">note_add</i></button>
-			</div>
+
 		</main>
 
-		<div id="modal=backdrop" class="hidden"></div>
+		<div class = "add-event-button-container">
+			<button id="add-event-button"><i class="material-icons">note_add</i></button>
+		</div>
+
+
+		<div id="modal-backdrop" class="hidden"></div>
 		<div id="add-event-modal" class="hidden">
 			<div class="modal-dialog">
 				<div clas="modal-header">
@@ -89,7 +92,7 @@
 				<div class ="modal-body">
 					<div class="event-input">
 						<label for="event-input-date">Date</label>
-						<input type="text" id="event-input-date">>
+						<input type="text" id="event-input-date">
 					</div>
 					<div class ="event-input">
 						<label for="event-input-event">Event</label>
@@ -98,7 +101,6 @@
 				</div>
 
 				<div class="modal-footer">
-				<button type="button" class="modal-cancel-button"Cancel</button>
 				<button type="button" class="modal-accept-button">Add an event</button>
 				</div>
 			</div>
