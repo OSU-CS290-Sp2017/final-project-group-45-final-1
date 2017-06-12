@@ -16,7 +16,7 @@ closeButton.addEventListener('click', function(){
 	var date = document.getElementById('event-input-date');
 	date.value = "";
 	var event = document.getElementById('event-input-event');
-	event.value = "";	
+	event.value = "";
 });
 
 var acceptButton = document.getElementsByClassName('modal-accept-button')[0];
@@ -48,7 +48,7 @@ acceptButton.addEventListener('click', function(){
 	var date = document.getElementById('event-input-date');
 	date.value = "";
 	var event = document.getElementById('event-input-event');
-	event.value = "";	
+	event.value = "";
 });
 var searchButton = document.getElementById('navbar-search-button');
 
@@ -68,6 +68,26 @@ function search(){
 		var y = eventDate.indexOf(input);
 		if(x === -1 && y === -1){
 			event[i].classList.add('hidden');
-		}		
+		}
 	}
+}
+
+//Open the drop down
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
