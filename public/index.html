@@ -9,12 +9,13 @@
 
 		<link rel="stylesheet" href="style.css" media="screen">
 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 	</head>
 	<body>
 
 		<header>
 
-			<header>
 			  <a href="#"><h1 class="site-title"><i class="fa fa-hand-lizard-o"></i> Planit</h1></a>
 
 			  <nav class="navbar">
@@ -44,26 +45,64 @@
 
 
 			  </nav>
-		  	</header>
 
 
 		</header>
 
-		<main>
-			<section class ="event">
-				<h2><p class="indent-wrapped"><span class="date">Date: </span>6/11/2017</p></h2
-					<div class ="event-body">
-						<p class = "indent-wrapped"><span class="body">Apply to Amazon </span> </p>
-					</div>
-			</section>
+		<main="event-container">
 
-			<section class ="event">
-				<h2><p class="indent-wrapped"><span class="date">Date: </span>6/15/2017</p></h2
-					<div class ="event-body">
-						<p class = "indent-wrapped"><span class="body">Submit essay </span> </p>
-					</div>
-			</section>
+			<article class ="event">
+				<div class="event-content">
+					<p class="event-date">
+						Date: 6/12/2017
+					</p>
+					<p class="event-text">
+						Apply to Amazon job.
+					</p>
+				</div>
+			</article>
+
+			<article ="event">
+				<div class ="event-content">
+					<p class="event-date">
+						Date: 6/15/2017
+					</p>
+					<p class="event-text">
+						Submit essay.
+					</p>
+				</div>
+			</article>
+
+			<div class = "add-event-button-container">
+				<button id="add-event-button"><i class="material-icons">note_add</i></button>
+			</div>
 		</main>
+
+		<div id="modal=backdrop" class="hidden"></div>
+		<div id="add-event-modal" class="hidden">
+			<div class="modal-dialog">
+				<div clas="modal-header">
+					<h3>Create an Event</h3>
+					<button type="button" class="modal-close-button">&times;</button>
+				</div>
+
+				<div class ="modal-body">
+					<div class="event-input">
+						<label for="event-input-date">Date</label>
+						<input type="text" id="event-input-date">>
+					</div>
+					<div class ="event-input">
+						<label for="event-input-event">Event</label>
+						<input type="text" id="event-input-event">
+					</div>
+				</div>
+
+				<div class="modal-footer">
+				<button type="button" class="modal-cancel-button"Cancel</button>
+				<button type="button" class="modal-accept-button">Add an event</button>
+				</div>
+			</div>
+		</div>
 
 
 	</body>
