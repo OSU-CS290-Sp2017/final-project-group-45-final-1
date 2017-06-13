@@ -36,13 +36,10 @@ acceptButton.addEventListener('click', function(){
 	div.classList.add('event-content');
 	div.appendChild(p1);
 	div.appendChild(p2);
-	var i = document.createElement('i');
-	i.classList.add('material-icons');
-	text = document.createTextNode('clear');
-	i.appendChild(text);
 	var button = document.createElement('button');
 	button.classList.add('delete-button');
-	button.appendChild(i);
+	var x = document.createTextNode('X');
+	button.appendChild(x);
 	var art = document.createElement('article');
 	art.classList.add('event');
 	art.appendChild(div);
