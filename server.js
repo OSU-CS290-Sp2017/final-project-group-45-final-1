@@ -27,7 +27,7 @@ function requestHandler(request, response){
 		else{
 			response.statusCode = 200;
 			response.setHeader("Content-type", "text/html");
-			reseponse.write(index);
+			response.write(index);
 			response.end();
 		}
 	}
