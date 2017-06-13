@@ -120,6 +120,10 @@ nav{
   cursor: pointer;
 }
 
+#navbar-search-button:hover{
+	color: #6AE368;
+}
+
 
 
 
@@ -172,17 +176,27 @@ nav{
 }
 
 
+.event-container article:hover,.event-container article:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+
+}
+
 /*Modal*****************************************************/
 #add-event-button{
 	font-size: 30px;
 	color: white;
 	position: fixed;
-	background-color: transparent;
+	background-color: #6AE368;
 	border-color: white;
 
 	bottom: 30px;
-	left: 45%;
-	width: 200px;
+	left: 90%;
+	width: 100px;
 	height: 80px;
 	border-radius: 25px;
 
