@@ -1,0 +1,13 @@
+{{> header}}
+
+<main class="event-container">
+
+  {{# each event}}
+    {{> event}}
+  {{/each}}
+
+</main>
+
+  {{#if showModal}}
+    {{> createEventModal}}
+  {{/if}}
