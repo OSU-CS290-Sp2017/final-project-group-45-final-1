@@ -153,6 +153,11 @@ nav{
 	font-weight: bold;
 }
 
+.delete-button{
+	height: 40px;
+
+}
+
 
 /*Modal*****************************************************/
 #modal-backdrop {
@@ -229,10 +234,6 @@ nav{
   padding: 8px;
   font-size: 20px;
   border: 1px solid #aaa;
-}
-
-.twit-input textarea {
-  min-height: 64px;
 }
 
 
