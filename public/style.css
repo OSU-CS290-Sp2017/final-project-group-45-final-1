@@ -29,29 +29,30 @@ nav{
    background-color: transparent;
 	padding: 1px 0px;
 
+
 }
 
 .navitem{
+	position: fixed;
+	left:0px;
+
 	color: white;
 	cursor: pointer;
-   display: inline-block;
    font-size: 20px;
-	padding-right: 10px;
 	padding-bottom: 10px;
 	border: none;
-    outline: none;
-    background-color: inherit;
+   outline: none;
+   background-color: inherit;
+
 }
 .navitem:hover{
-	color:#298ffa;
+	color:#6AE368;
 }
-.navlist li:hover{
-
-}
-
 
 .navbar-search{
-   float: right;
+	position: fixed;
+	right:0px;
+
 }
 
 .dropbtn {
@@ -127,16 +128,16 @@ nav{
   margin: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
 .event {
   flex: 0 1 25%;
-  width: 200px;
+  width: 80%;
   height: 100px;
   display: flex;
-  margin: 2px;
+  margin: 10px;
   padding: 20px;
 
   border-radius: 25px;
@@ -150,9 +151,14 @@ nav{
 }
 
 .event-date{
+	font-size: 32px;
 	font-weight: bold;
 }
 
+.event-text{
+	font-size: 20px;
+
+}
 .delete-button{
 	height: 40px;
 
@@ -160,6 +166,22 @@ nav{
 
 
 /*Modal*****************************************************/
+#add-event-button{
+	font-size: 30px;
+	color: white;
+	position: fixed;
+	background-color: transparent;
+	border-color: white;
+
+	bottom: 30px;
+	left: 45%;
+	width: 200px;
+	height: 80px;
+	border-radius: 25px;
+
+}
+
+
 #modal-backdrop {
   position: fixed;
   top: 0;
@@ -195,23 +217,24 @@ nav{
   padding: 10px 20px;
 }
 
-.modal-body {
-  padding: 20px;
+.modal-header h3 {
+  margin: 0;
+  font-size: 28px;
 }
 
-#add-event-button{
-	font-size: 30px;
-	color: white;
-	position: fixed;
-	background-color: transparent;
-	border-color: white;
+.modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-	bottom: 30px;
-	left: 45%;
-	width: 200px;
-	height: 80px;
-	border-radius: 25px;
-
+.modal-body {
+  padding: 20px;
 }
 
 
@@ -224,8 +247,8 @@ nav{
 
 .event-input label {
   font-weight: 600;
-  flex: 1 75px;
-  margin-right: 10px;
+  flex: 1 50px;
+  padding-left: 30px;
 }
 
 .event-input input,
@@ -237,17 +260,6 @@ nav{
 }
 
 
-.modal-close-button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 24px;
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-}
-
 .modal-footer {
   display: flex;
   justify-content: flex-end;
@@ -256,7 +268,7 @@ nav{
 
 .modal-footer button {
   font-size: 20px;
-  background-color: #fff;
+  background-color: #6AE368;
   color: #333;
   border: 1px solid #333;
   border-radius: 5px;
@@ -264,6 +276,7 @@ nav{
   margin-right: 20px;
   cursor: pointer;
 }
+
 
 
 .hidden {
