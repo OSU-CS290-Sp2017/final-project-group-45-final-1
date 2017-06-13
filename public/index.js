@@ -97,7 +97,7 @@ jan.addEventListener('click', function(){
 	var event = document.getElementsByClassName('event');
 	for(var i = 0; i< event.length; i ++){
 		event[i].classList.remove('hide');
-		var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+		var date = event[i].getElementsByClassName('event-date')[0].textContent;
 		var y = date.indexOf('January');
 		var z = date.indexOf('january');
 		if(y=== -1 && z === -1){
@@ -111,7 +111,7 @@ feb.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('February');
                 var z = date.indexOf('february');
                 if(y=== -1 && z === -1){
@@ -125,7 +125,7 @@ mar.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('March');
                 var z = date.indexOf('march');
                 if(y=== -1 && z === -1){
@@ -153,7 +153,7 @@ may.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('May');
                 var z = date.indexOf('may');
                 if(y=== -1 && z === -1){
@@ -168,7 +168,7 @@ jun.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('June');
                 var z = date.indexOf('june');
                 if(y=== -1 && z === -1){
@@ -183,7 +183,7 @@ jul.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('July');
                 var z = date.indexOf('july');
                 if(y=== -1 && z === -1){
@@ -197,7 +197,7 @@ aug.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('August');
                 var z = date.indexOf('august');
                 if(y=== -1 && z === -1){
@@ -211,7 +211,7 @@ sep.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('September');
                 var z = date.indexOf('september');
                 if(y=== -1 && z === -1){
@@ -225,7 +225,7 @@ oct.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('October');
                 var z = date.indexOf('october');
                 if(y=== -1 && z === -1){
@@ -239,7 +239,7 @@ nov.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('November');
                 var z = date.indexOf('november');
                 if(y=== -1 && z === -1){
@@ -253,7 +253,7 @@ dec.addEventListener('click', function(){
         var event = document.getElementsByClassName('event');
         for(var i = 0; i< event.length; i ++){
                 event[i].classList.remove('hide');
-                var date = event[i].getElementsByClassName('event-date')[0].textContent;i
+                var date = event[i].getElementsByClassName('event-date')[0].textContent;
                 var y = date.indexOf('December');
                 var z = date.indexOf('december');
                 if(y=== -1 && z === -1){
