@@ -172,8 +172,9 @@ nav{
 	height: 40px;
 	width: 40px;
 	font-size: 20px;
-
 }
+
+
 
 
 .event-container article:hover,.event-container article:focus{
@@ -296,6 +297,11 @@ nav{
   padding: 10px;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.modal-footer button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
 }
 
 
