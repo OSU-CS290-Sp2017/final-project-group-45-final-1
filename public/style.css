@@ -88,6 +88,7 @@ nav{
 }
 .dropdown-content a:hover {
     background-color: #ddd;
+	 background-color: #6AE368;
 }
 
 .show {
@@ -143,7 +144,7 @@ nav{
 
   border-radius: 25px;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .event-content {
@@ -162,6 +163,7 @@ nav{
 
 }
 .delete-button{
+	margin: 10px;
 	height: 40px;
 	width: 40px;
 	font-size: 20px;
