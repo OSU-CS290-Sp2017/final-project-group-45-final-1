@@ -36,9 +36,17 @@ acceptButton.addEventListener('click', function(){
 	div.classList.add('event-content');
 	div.appendChild(p1);
 	div.appendChild(p2);
+	var i = document.createElement('i');
+	i.classList.add('material-icons');
+	text = document.createTextNode('clear');
+	i.appendChild(text);
+	var button = document.createElement('button');
+	button.classList.add('delete-button');
+	button.appendChild(i);
 	var art = document.createElement('article');
 	art.classList.add('event');
 	art.appendChild(div);
+	art.appendChild(button);
 	var event = document.getElementsByClassName('event-container')[0];
 	event.appendChild(art);
 	var hideForm = document.getElementsByClassName('hidden');
@@ -271,17 +279,17 @@ home.addEventListener('click', function(){
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.addEventListener('DOMContentLoaded', function(event){
+	var main = document.querySelector('main');
+  if (main) {
+    main.addEventListener('click', help);
+  }
+});
+function help(){
+	var closeButton = event.target;
+        var paren = event.target.parentNode;
+        if(closeButton.classList.contains('delete-button')){
+                var main = paren.parentNode;
+                main.removeChild(paren);
+        }
+}
