@@ -261,7 +261,15 @@ dec.addEventListener('click', function(){
                 }
         }
 });
+var home = document.getElementById('home');
 
+home.addEventListener('click', function(){
+	var event = document.getElementsByClassName('event');
+	for(var i = 0; i <event.length; i++){
+		event[i].classList.remove('hide');
+	}
+
+});
 
 
 
