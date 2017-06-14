@@ -1,5 +1,5 @@
 var port = process.env.PORT || 3000;
-
+var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var app = express();
@@ -43,4 +43,26 @@ app.get('*', function(req, res) {
 
 app.listen(port, function() {
     console.log("Open port at", port);
+});
+app.post('/createEvent', function (req, res, next) {
+	console.log("HI");
+  var even = eventData[req.params.even];
+
+  if (even) {
+    if (req.body && req.body.url) {
+
+      var even = {
+        date: req.body.date,
+        event: req.body.event
+      };
+
+
+      fs.writeFile('eventData.json', JSON.stringify(eventData), function (err) {
+      });
+
+	}
+  } else {
+    next();
+  }
+	console.log("===Hi");
 });

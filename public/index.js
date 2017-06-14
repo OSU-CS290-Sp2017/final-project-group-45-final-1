@@ -1,3 +1,4 @@
+var newEvent;
 var addEvent = document.getElementById('add-event-button');
 
 addEvent.addEventListener('click', function(){
@@ -18,10 +19,11 @@ closeButton.addEventListener('click', function(){
 	var event = document.getElementById('event-input-event');
 	event.value = "";
 });
-
+/*
 var acceptButton = document.getElementsByClassName('modal-accept-button')[0];
 
 acceptButton.addEventListener('click', function(){
+	/*
 	var p1 = document.createElement('p');
 	p1.classList.add('event-date');
 	var text = document.getElementById('event-input-date').value;
@@ -54,7 +56,9 @@ acceptButton.addEventListener('click', function(){
 	date.value = "";
 	var event = document.getElementById('event-input-event');
 	event.value = "";
+
 });
+*/
 var searchButton = document.getElementById('navbar-search-button');
 
 searchButton.addEventListener('click', function(){
