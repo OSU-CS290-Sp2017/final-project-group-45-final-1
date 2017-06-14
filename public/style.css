@@ -313,10 +313,40 @@ nav{
 }
 
 
-
 .hidden {
   display: none;
 }
 .hide{
 	display: none;
+}
+
+/*Footer////////////////////////////////*/
+
+.footer{
+	color: white;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+}
+.footer-title{
+	color: white;
+	display: inline-block;
+	font-size: 60px;
+
+}
+.footer-content{
+	color: white;
+	display: inline-block;
+
+}
+
+.footer-title .material-icons{
+		font-size: 50px;
+}
+
+.footer-list{
+	color:white;
+}
+
+.footer-list:hover{
+	color:#6AE368;
 }
