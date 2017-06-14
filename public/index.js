@@ -41,9 +41,9 @@ acceptButton.addEventListener('click', function(){
 	div.appendChild(p1);
 	div.appendChild(p2);
 	var button = document.createElement('button');
-	button.classList.add('delete-button');
-	var x = document.createTextNode('X');
-	button.appendChild(x);
+	//button.classList.add('delete-button');
+	//var x = document.createTextNode('X');
+	//button.appendChild(x);
 	var art = document.createElement('article');
 	art.classList.add('event');
 	art.appendChild(div);
@@ -286,7 +286,7 @@ function newEvent(){
 	var inputEvent = document.getElementById('event-input-event').value;
 	var url = "./createEvent";
 	var request = new XMLHttpRequest();
-	request.open('POST', '');
+	request.open('POST', '/events/createEvent');
 	request.setRequestHeader('Content-Type', 'application/json');
 	var eve={
 		date: inputDate,
@@ -294,12 +294,21 @@ function newEvent(){
 	};
 	console.log(JSON.stringify(eve));
 	request.send(JSON.stringify(eve));
+ var hideForm = document.getElementsByClassName('hidden');
+        for(var i = 0; i<hideForm.length; i++){
+                hideForm[i].style.display = 'none';
+        }
+        var date = document.getElementById('event-input-date');
+        date.value = "";
+        var event = document.getElementById('event-input-event');
+        event.value = "";	
+	
 	
 }
 window.addEventListener('DOMContentLoaded', function(event){
 	var main = document.querySelector('main');
 	if (main) {
-    		main.addEventListener('click', help);
+    		//main.addEventListener('click', help);
  	}
 });
 function help(){

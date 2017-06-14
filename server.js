@@ -8,16 +8,6 @@ var file = require('./eventData.json');
 app.use(express.static('public'));
 
 var eventData = require('./eventData');
-var makeEvent = function(req, file){
-	var event = eventData[req.params.eventData];
-	var fileStr = file;
-	var item ={
-		date: req.date,
-		event: req.body.event
-	}
-	fileStr.push(item);
-	return fileStr;	
-}
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars');
@@ -52,18 +42,16 @@ app.get('*', function(req, res){
 app.listen(port, function() {
     console.log("Open port at", port);
 });
-app.post('/', function (req, res, next) {
-	console.log("====HI");
-	var event = eventData[req.params.event];
+//app.use(express.bodyParser());
+app.post('/events/createEvent', function (req, res, next) {
+	var event = eventData[req.params.index];
 	var fileStr = file;
-	var str = JSON.parse(req);
-	console.log(str);
 	var item ={
-		date: req.date,
-		event: req.event
+		date: req.body,
+		event: req.body
 	};
 //	event.item.push(item);
-//	console.log(req.body);
+	console.log(req.body);
 	fileStr.push(item);
 	fs.writeFile('./eventData.json', JSON.stringify(fileStr));
 	res.end();
