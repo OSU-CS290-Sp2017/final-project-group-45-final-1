@@ -1,4 +1,5 @@
 /*before handlebars*/
+/*
 var fs = require('fs');
 var http = require('http');
 var port = process.env.PORT || 3000;
@@ -77,4 +78,57 @@ function requestHandler(request, response){
 }
 
 
-server.listen(3000);
+server.listen(3000);*/
+/*
+Name: Thomas Huynh
+ * Write your Express server in this file as described in README.md.
+ */
+var port = process.env.PORT || 3000;
+
+var path = require('path');
+var express = require('express');
+var app = express();
+var exphbs = require('express-handlebars');
+app.use(express.static('public'));
+
+//import data from twitData.json using 'require'
+var eventData = require('./eventData');
+
+
+app.engine('handlebars', exphbs({defaultLayout: 'main'}))
+app.set('view engine', 'handlebars');
+
+//load twitPage using 'render' if the user inputs '/'
+app.get('/', function(req, res) {
+    res.render('eventPage', {
+    title: 'Planit',
+     //set the variable 'twitData' equal to the data from twitData.json
+    event:eventData, 
+    showModal: true
+    })
+}); 
+
+app.get('/twits/:index',function(req,res){
+	console.log("Web address parameters for req:",req.params);
+	var index = req.params.index;
+	var element = eventData[index];
+	if(element){
+	res.render('eventPage',{
+		title:'Planit',
+		twit: [eventData[index]],
+		showModal: false
+	});
+	}
+});
+
+
+app.get('*', function(req, res) {
+    res.status(404).render('404Page', {
+        title: 'Planit'
+    });
+})
+
+
+app.listen(port, function() {
+    console.log("Open port at", port);
+});
