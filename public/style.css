@@ -350,3 +350,12 @@ nav{
 .footer-list:hover{
 	color:#6AE368;
 }
+h2{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+h3{
+	text-align: cetnter;
+	color: white;
+}

@@ -44,11 +44,9 @@ app.get('/events/:index',function(req,res){
 });
 
 
-app.get('*', function(req, res) {
-    res.status(404).render('404Page', {
-        title: 'Planit'
-    });
-})
+app.get('*', function(req, res){
+	res.status(404).render('404Page');
+});
 
 
 app.listen(port, function() {
@@ -58,12 +56,14 @@ app.post('/', function (req, res, next) {
 	console.log("====HI");
 	var event = eventData[req.params.event];
 	var fileStr = file;
+	var str = JSON.parse(req);
+	console.log(str);
 	var item ={
 		date: req.date,
 		event: req.event
 	};
 //	event.item.push(item);
-//	console.log(eve);
+//	console.log(req.body);
 	fileStr.push(item);
 	fs.writeFile('./eventData.json', JSON.stringify(fileStr));
 	res.end();
