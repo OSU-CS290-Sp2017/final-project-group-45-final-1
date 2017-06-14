@@ -43,7 +43,7 @@ app.listen(port, function() {
     console.log("Open port at", port);
 });
 //app.use(express.bodyParser());
-app.post('/events/createEvent', function (req, res, next) {
+app.post('/events/:index/createEvent', function (req, res, next) {
 	var event = eventData[req.params.index];
 	var fileStr = file;
 	var item ={
@@ -54,6 +54,5 @@ app.post('/events/createEvent', function (req, res, next) {
 	console.log(req.body);
 	fileStr.push(item);
 	fs.writeFile('./eventData.json', JSON.stringify(fileStr));
-	res.end();
 });
 	

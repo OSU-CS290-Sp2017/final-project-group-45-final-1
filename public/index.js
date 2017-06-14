@@ -21,11 +21,11 @@ closeButton.addEventListener('click', function(){
 
 var acceptButton = document.getElementById('modal-accept-button');
 acceptButton.addEventListener('click', newEvent);
-/*
-var acceptButton = document.getElementsByClassName('modal-accept-button')[0];
 
+//var acceptButton = document.getElementsByClassName('modal-accept-button')[0];
+/*
 acceptButton.addEventListener('click', function(){
-	/*
+	
 	var p1 = document.createElement('p');
 	p1.classList.add('event-date');
 	var text = document.getElementById('event-input-date').value;
@@ -40,14 +40,14 @@ acceptButton.addEventListener('click', function(){
 	div.classList.add('event-content');
 	div.appendChild(p1);
 	div.appendChild(p2);
-	var button = document.createElement('button');
+	//var button = document.createElement('button');
 	//button.classList.add('delete-button');
 	//var x = document.createTextNode('X');
 	//button.appendChild(x);
 	var art = document.createElement('article');
 	art.classList.add('event');
 	art.appendChild(div);
-	art.appendChild(button);
+//	art.appendChild(button);
 	var event = document.getElementsByClassName('event-container')[0];
 	event.appendChild(art);
 	var hideForm = document.getElementsByClassName('hidden');
@@ -286,7 +286,7 @@ function newEvent(){
 	var inputEvent = document.getElementById('event-input-event').value;
 	var url = "./createEvent";
 	var request = new XMLHttpRequest();
-	request.open('POST', '/events/createEvent');
+	request.open('POST', '/events/:index/createEvent');
 	request.setRequestHeader('Content-Type', 'application/json');
 	var eve={
 		date: inputDate,
