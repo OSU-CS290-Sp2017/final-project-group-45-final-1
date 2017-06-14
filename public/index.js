@@ -1,4 +1,3 @@
-var newEvent;
 var addEvent = document.getElementById('add-event-button');
 
 addEvent.addEventListener('click', function(){
@@ -19,6 +18,9 @@ closeButton.addEventListener('click', function(){
 	var event = document.getElementById('event-input-event');
 	event.value = "";
 });
+
+var acceptButton = document.getElementById('modal-accept-button');
+acceptButton.addEventListener('click', newEvent);
 /*
 var acceptButton = document.getElementsByClassName('modal-accept-button')[0];
 
@@ -279,12 +281,26 @@ home.addEventListener('click', function(){
 	}
 
 });
-
+function newEvent(){
+	var inputDate = document.getElementById('event-input-date').value;
+	var inputEvent = document.getElementById('event-input-event').value;
+	var url = "./createEvent";
+	var request = new XMLHttpRequest();
+	request.open('POST', '');
+	request.setRequestHeader('Content-Type', 'application/json');
+	var eve={
+		date: inputDate,
+		event: inputEvent
+	};
+	console.log(JSON.stringify(eve));
+	request.send(JSON.stringify(eve));
+	
+}
 window.addEventListener('DOMContentLoaded', function(event){
 	var main = document.querySelector('main');
-  if (main) {
-    main.addEventListener('click', help);
-  }
+	if (main) {
+    		main.addEventListener('click', help);
+ 	}
 });
 function help(){
 	var closeButton = event.target;
