@@ -6,21 +6,21 @@ body{
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .site-title {
-  margin: 0;
-  padding: 10px 20px;
-  font-size: 80px;
-  font-weight: 100;
-  background-color: black;
-  color: white;
-  text-align: center;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 80px;
+	font-weight: 100;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
 }
 
 .site-title .material-icons{
-		font-size: 50px;
+	font-size: 50px;
 }
 
 
@@ -57,68 +57,68 @@ nav{
 }
 
 .dropbtn {
-    border: none;
-    outline: none;
-    background-color: inherit;
+	border: none;
+	outline: none;
+	background-color: inherit;
 }
 
 .dropdown-content {
-    display: none; /*This must be used with .show to toggle the display on and off!*/
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+	display: none; /*This must be used with .show to toggle the display on and off!*/
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
 }
 
 .Month{
-	 border: none;
-    outline: none;
-	 background-color: inherit;
-	 font-size: 20px;
+	border: none;
+   outline: none;
+	background-color: inherit;
+	font-size: 20px;
 
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
-	 background-color: #6AE368;
+   background-color: #ddd;
+	background-color: #6AE368;
 }
 
 .show {
-    display: block;
+   display: block;
 }
 
 .navbar-search {
-  position: relative;
-  float: right;
-  margin-right: 20px;
-  padding: 0;
-  line-height: 38px;
+ 	position: relative;
+ 	float: right;
+ 	margin-right: 20px;
+ 	padding: 0;
+ 	line-height: 38px;
 }
 
 #navbar-search-input {
-  padding: 4px;
-  font-size: 16px;
-  background-color: #eee;
-  border: 1px solid #dadada;
-  border-radius: 2px;
+ 	padding: 4px;
+ 	font-size: 16px;
+ 	background-color: #eee;
+ 	border: 1px solid #dadada;
+ 	border-radius: 2px;
 }
 
 #navbar-search-button {
-  margin-left: -5px;
-  font-size: 16px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+ 	margin-left: -5px;
+ 	font-size: 16px;
+ 	background: none;
+ 	border: none;
+ 	color: white;
+ 	cursor: pointer;
 }
 
 #navbar-search-button:hover{
@@ -132,30 +132,30 @@ nav{
 
 /*Main Container*****************************************************/
 .event-container {
-  margin: 50px 10%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+ 	margin: 50px 10%;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	flex-direction: column;
 
 }
 
 .event {
-  flex: 0 1 25%;
-  width: 80%;
-  height: 100px;
-  display: flex;
-  margin: 10px;
-  padding: 20px;
-  color: #6AE368;
+ 	flex: 0 1 25%;
+ 	width: 80%;
+ 	height: 100px;
+ 	display: flex;
+ 	margin: 10px;
+ 	padding: 20px;
+ 	color: #6AE368;
 
-  border-radius: 25px;
-  background-color: white;
-  opacity: 0.7;
+ 	background-color: white;
+ 	opacity: 0.7;
+
 }
 
 .event-content {
-  flex: 1 1 80%;
-  margin-left: 10px;
+ 	flex: 1 1 80%;
+ 	margin-left: 10px;
 }
 
 .event-date{
@@ -179,12 +179,12 @@ nav{
 
 
 .event-container article:hover,.event-container article:focus{
-  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+ 	-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ 	-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+ 	box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ 	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
 
 }
 
@@ -204,85 +204,85 @@ nav{
 }
 
 #add-event-button .material-icons{
-		font-size: 40px;
+	font-size: 40px;
 }
 
 
 #modal-backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.65);
+ 	position: fixed;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	z-index: 1000;
+ 	background-color: rgba(0, 0, 0, 0.65);
 }
 
 #add-event-modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1010;
-  overflow: scroll;
+ 	position: fixed;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	z-index: 1010;
+ 	overflow: scroll;
 }
 
 .modal-dialog {
-  width: auto;
-  max-width: 600px;
-  min-width: 350px;
-  min-height: 300px;
-  margin: 40px auto;
-  background-color: #fff;
-  border-radius: 15px;
+ 	width: auto;
+ 	max-width: 600px;
+ 	min-width: 350px;
+ 	min-height: 300px;
+ 	margin: 40px auto;
+ 	background-color: #fff;
+ 	border-radius: 15px;
 }
 
 .modal-header {
-  position: relative;
-  padding: 10px 20px;
+ 	position: relative;
+ 	padding: 10px 20px;
 }
 
 .modal-header h3 {
-  margin: 0;
-  font-size: 28px;
+ 	margin: 0;
+ 	font-size: 28px;
 }
 
 .modal-close-button {
-  position: absolute;
-  right: 10px;
-  top: -10px;
-  font-size: 50px;
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
+ 	position: absolute;
+  	right: 10px;
+ 	top: -10px;
+ 	font-size: 50px;
+ 	border: none;
+ 	background: none;
+ 	padding: 0;
+ 	cursor: pointer;
 }
 
 .modal-body {
-  padding: 20px;
+ 	padding: 20px;
 }
 
 
 .event-input {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  margin: 10px 0;
+ 	display: flex;
+ 	align-items: center;
+ 	font-size: 20px;
+ 	margin: 10px 0;
 }
 
 .event-input label {
-  font-weight: 600;
-  flex: 1 50px;
-  padding-left: 30px;
+ 	font-weight: 600;
+ 	flex: 1 50px;
+ 	padding-left: 30px;
 }
 
 .event-input input{
-  flex: 6 200px;
-  padding: 8px;
-  font-size: 20px;
-  border: 1px solid #aaa;
-    color: #6AE368;
+	flex: 6 200px;
+	padding: 8px;
+	font-size: 20px;
+	border: 1px solid #aaa;
+	color: #6AE368;
 }
 
 #event-input-event{
@@ -291,30 +291,30 @@ nav{
 
 
 .modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 10px 20px 10px;
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	padding: 10px 10px 20px 10px;
 }
 
 .modal-footer button {
-  font-size: 20px;
-  background-color: #6AE368;
-  color: #333;
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 10px;
-  margin-right: 20px;
-  cursor: pointer;
+	font-size: 20px;
+	background-color: #6AE368;
+	color: #333;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
 .modal-footer button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+ 	background-color: #3e8e41;
+ 	box-shadow: 0 5px #666;
 }
 
 
 .hidden {
-  display: none;
+	display: none;
 }
 .hide{
 	display: none;
