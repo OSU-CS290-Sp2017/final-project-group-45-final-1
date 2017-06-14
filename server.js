@@ -27,7 +27,7 @@ app.get('/events/:index',function(req,res){
 	if(element){
 	res.render('eventPage',{
 		title:'Planit',
-		twit: [eventData[index]],
+		event: [eventData[index]],
 		showModal: false
 	});
 	}
