@@ -34,7 +34,7 @@ nav{
 }
 
 .navitem{
-	position: fixed;
+	position:relative;
 	left:0px;
 
 	color: white;
@@ -49,7 +49,9 @@ nav{
 .navitem:hover{
 	color:#6AE368;
 }
-
+ul{
+	list-style-type: none;
+}
 .navbar-search{
 	position: fixed;
 	right:0px;
